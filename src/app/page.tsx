@@ -1,113 +1,157 @@
-import Image from 'next/image'
+import { MenuItem } from "@/common";
+import Image from "next/image";
 
-export default function Home() {
+export default function Landing() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="container mx-auto lg:max-w-screen-xl p-4 flex flex-col gap-4">
+      <div>
+        <div className="p-4 bg-white">
+          <div
+            className="p-4 py-20 flex flex-col items-center"
+            style={{
+              backgroundImage: "url(https://divinemetalandroofing.com/wp-content/uploads/2021/08/Architectural-Roof.jpg?id=498)",
+              backgroundSize: "cover",
+              backgroundPosition: "center center"
+            }}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <div className="flex flex-col gap-4">
+              <a href="#" rel="home" aria-current="page">
+                <img
+                  width="425"
+                  height="250"
+                  src="/logo.png"
+                  className="custom-logo"
+                  alt="Divine Metal And Roofing"
+                  sizes="(max-width: 425px) 100vw, 425px"
+                />
+              </a>
+              <p className="site-title uppercase text-4xl font-bold">
+                <a href="#" rel="home">
+                  Divine Metal And Roofing
+                </a>
+              </p>
+              <p className="site-description"></p>
+            </div>
+          </div>
         </div>
+        <nav>
+          <ul className="flex bg-[#504741] justify-center">
+            <MenuItem title="Home" href="" />
+            <MenuItem title="Residential" href="" />
+            <MenuItem title="Commercial" href="" />
+            <MenuItem title="Replacement And Installation" href="" />
+            <MenuItem title="Roof Repair" href="" />
+            <MenuItem title="Gallery" href="" />
+            <MenuItem title="About Us" href="" />
+          </ul>
+        </nav>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      <main className="bg-white text-[#303030] p-8">
+        <section className="flex flex-col gap-4">
+          <p>
+            Updating a roof of a home or business adds to its curb appeal and the value of the property. When it is time
+            to re-roof a home or business, there is a choice of materials to be used. The options can be overwhelming.
           </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p>
+            Each kind of roofing material has advantages and disadvantages regarding its visual appeal, affordability,
+            and longevity. Let Divine Metal and Roofing highlight the choices to help in determining the best material
+            for your roofing project.
           </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+          <p>
+            We offer a broad spectrum of roofing materials that will keep your business or home looking its best and
+            protected. Our services include residential and commercial installation, maintenance, and replacement. We
+            treat you and your property with professionalism, respect, and courtesy.
           </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p>
+            It is our goal to provide solutions and services that please our customers. With Divine Metal and Roofing,
+            you get
           </p>
-        </a>
-      </div>
-    </main>
-  )
+
+          <ul className="list-disc pl-8">
+            <li>Ethics</li>
+            <li>Experience</li>
+            <li>Job site organization</li>
+            <li>Knowledge of installation</li>
+            <li>Knowledge of products and codes</li>
+            <li>Professionalism</li>
+            <li>Quality workmanship</li>
+            <li>Safety and proper insurances and licensing</li>
+          </ul>
+          <p>
+            Devine Metal and Roofing is a reliable roofing company. We have the experience, collateral, and capacity to
+            handle all your roofing needs. Our service includes insurance claim assistance. We go beyond the expected to
+            provide a safe environment and quality control that surpasses our competition.
+          </p>
+
+          <p>
+            Our reputation for providing value in each step of the process demands we do so. We value our clients and
+            understand their property is an asset of importance.
+          </p>
+        </section>
+
+        <section className="bg-[#E5E5E5] p-8">
+          <div data-vc-full-width="true" data-vc-full-width-init="true" className="flex gap-4">
+            <div className="flex flex-col gap-4">
+              <h3 className="text-4xl font-bold">Residential Roofing</h3>
+              <p>
+                Divine Metal and Roofing raises the bar for residential roofing. We outperform the competition. Our
+                roofers keep you comfortable, your peace of mind intact, and your property protected. Our product
+                spotlight includes
+              </p>
+              <ul className="list-disc pl-8">
+                <li>Metal/Standing seam roofing</li>
+                <li>
+                  <a
+                    title="Architectural"
+                    href="https://divinemetalandroofing.com/architectural/"
+                    rel="nofollow sponsored ugc"
+                  >
+                    Architectural and designer shingle roofing
+                  </a>
+                </li>
+                <li>
+                  <a
+                    title="Specialty Roof"
+                    href="https://divinemetalandroofing.com/specialty-roof/"
+                    rel="nofollow sponsored ugc"
+                  >
+                    Specialty roofs such as synthetic, shake, and slate
+                  </a>
+                </li>
+                <li>
+                  <a
+                    title="Roof Repair"
+                    href="https://divinemetalandroofing.com/roof-repair/"
+                    rel="nofollow sponsored ugc"
+                  >
+                    Roof Repair
+                  </a>
+                </li>
+              </ul>
+              <p>Our services include standard and emergency repairs.</p>
+            </div>
+            <a href="/residential">
+              <img
+                width="1920"
+                height="1440"
+                src="https://divinemetalandroofing.com/wp-content/uploads/2021/07/Residential-2.jpg"
+                className="vc_single_image-img attachment-full"
+                alt="St Louis"
+                loading="lazy"
+                sizes="(max-width: 1920px) 100vw, 1920px"
+              />
+            </a>
+          </div>
+        </section>
+
+        <aside></aside>
+      </main>
+
+      <footer></footer>
+    </div>
+  );
 }
