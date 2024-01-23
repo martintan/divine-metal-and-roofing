@@ -73,15 +73,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex flex-row gap-8 mx-8 w-3/5">
               <div className="flex flex-1 flex-col text-default gap-1">
                 <p className="text-primary font-bold text-2xl mb-3">Services</p>
-                <Link href={"/residential"}>Residential</Link>
-                <Link href={"/commercial"}>Commercial</Link>
-                <Link href={"/replacement-and-installation"}>Replacement and Installation</Link>
-                <Link href={"/roof-repair"}>Roof Repair</Link>
+                <Link className="hover:underline" href={"/residential"}>
+                  Residential
+                </Link>
+                <Link className="hover:underline" href={"/commercial"}>
+                  Commercial
+                </Link>
+                <Link className="hover:underline" href={"/replacement-and-installation"}>
+                  Replacement and Installation
+                </Link>
+                <Link className="hover:underline" href={"/roof-repair"}>
+                  Roof Repair
+                </Link>
               </div>
               <div className="flex flex-1 flex-col text-default  gap-1">
                 <p className="text-primary font-bold text-2xl  mb-3">Contact Us</p>
-                <Link href={""}>(636)-751-2237</Link>
-                <Link href={""}>Privacy Policy</Link>
+                <Link className="hover:underline" href={""}>
+                  (636)-751-2237
+                </Link>
+                <Link className="hover:underline" href={""}>
+                  Privacy Policy
+                </Link>
               </div>
               <div className="flex-1 flex-col text-default  gap-1">
                 <p className="text-primary font-bold text-2xl  mb-3">Follow Us</p>
