@@ -51,8 +51,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <ul className="flex bg-[#504741] justify-center">
               <MenuItem title="Home" href="/" />
               <MenuItem title="Residential" href="/residential" />
-              <MenuItem title="Commercial" href="/commercial" />
-              <MenuItem title="Replacement And Installation" href="/replacement-and-installation" />
+              <MenuItem
+                childRoutes={[{ title: "Commercial Roof Services", route: "commercial-roof-services" }]}
+                title="Commercial"
+                href="/commercial"
+              />
+              <MenuItem
+                childRoutes={[
+                  { title: "Specialty Roof", route: "specialty-roof" },
+                  { title: "Architectural", route: "architectural" },
+                  { title: "Metal Roofing", route: "metal-roofing" },
+                ]}
+                title="Replacement And Installation"
+                href="/replacement-and-installation"
+              />
               <MenuItem title="Roof Repair" href="roof-repair" />
               <MenuItem title="Gallery" href="gallery" />
               <MenuItem title="About Us" href="about-us" />
