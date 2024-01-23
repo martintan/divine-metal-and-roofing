@@ -38,7 +38,7 @@ export default function Landing() {
           <li>Safety and proper insurances and licensing</li>
         </ul>
         <p>
-          Devine Metal and Roofing is a reliable roofing company. We have the experience, collateral, and capacity to
+          Divine Metal and Roofing is a reliable roofing company. We have the experience, collateral, and capacity to
           handle all your roofing needs. Our service includes insurance claim assistance. We go beyond the expected to
           provide a safe environment and quality control that surpasses our competition.
         </p>
