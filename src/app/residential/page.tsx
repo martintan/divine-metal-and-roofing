@@ -1,3 +1,5 @@
+import CustomContentCard from "@/common/components/custom-content-card";
+
 /* eslint-disable @next/next/no-img-element */
 export default function Residential() {
   return (
@@ -9,40 +11,27 @@ export default function Residential() {
           for a home, garage, or residential building. Products include shingles, underlayment, and accessories.
         </p>
       </section>
+      <CustomContentCard
+        title="Shingles"
+        imgUrl="https://divinemetalandroofing.com/wp-content/uploads/2021/07/Residential-2.jpg"
+      >
+        <p>
+          Divine Metal and Roofing has high-quality shingles in a broad spectrum of colors and styles. The most used
+          product is asphalt roofing shingles. There are three main categories of shingles. They include strip,
+          dimensional, and premium roofing shingles.
+        </p>
+        <p>
+          The most basic are strip shingles. They are single-layer shingles that are designed to look like slate.
+          Dimensional shingles are heavier in weight. They are multi-layered or dual-layered products. Premium shingles
+          are usually laminated. They provide an increased design element and enhanced aesthetics.
+        </p>
+        <p className="text-2xl font-bold text-default">Underlayment</p>
+        <p>
+          The underlayment is a water-resistant layer beneath the shingles. Waterproofing underlayment prevents leaks
+          from wind-driven rain and ice dams in vulnerable areas.
+        </p>
+      </CustomContentCard>
 
-      <section className="bg-[#E5E5E5] p-8">
-        <div data-vc-full-width="true" data-vc-full-width-init="true" className="flex gap-4">
-          <div className="flex flex-col gap-4">
-            <h3 className="text-4xl font-bold text-primary">Shingles</h3>
-            <p>
-              Divine Metal and Roofing has high-quality shingles in a broad spectrum of colors and styles. The most used
-              product is asphalt roofing shingles. There are three main categories of shingles. They include strip,
-              dimensional, and premium roofing shingles.
-            </p>
-            <p>
-              The most basic are strip shingles. They are single-layer shingles that are designed to look like slate.
-              Dimensional shingles are heavier in weight. They are multi-layered or dual-layered products. Premium
-              shingles are usually laminated. They provide an increased design element and enhanced aesthetics.
-            </p>
-            <p className="text-2xl font-bold text-default">Underlayment</p>
-            <p>
-              The underlayment is a water-resistant layer beneath the shingles. Waterproofing underlayment prevents
-              leaks from wind-driven rain and ice dams in vulnerable areas.
-            </p>
-          </div>
-          <a href="/residential">
-            <img
-              width="1920"
-              height="1440"
-              src="https://divinemetalandroofing.com/wp-content/uploads/2021/07/Residential-2.jpg"
-              className="vc_single_image-img attachment-full"
-              alt="St Louis"
-              loading="lazy"
-              sizes="(max-width: 1920px) 100vw, 1920px"
-            />
-          </a>
-        </div>
-      </section>
       <section>
         <div className="flex flex-col gap-4">
           <h3 className="text-2xl font-bold text-default">Accessories</h3>
@@ -91,51 +80,39 @@ export default function Residential() {
           </p>
         </div>
       </section>
-
-      <section className="bg-[#E5E5E5] p-8">
-        <div data-vc-full-width="true" data-vc-full-width-init="true" className="flex gap-4">
-          <a href="/residential">
-            <img
-              width="1920"
-              height="1440"
-              src="https://divinemetalandroofing.com/wp-content/uploads/2021/07/Slate-Roof.jpg"
-              className="vc_single_image-img attachment-full"
-              alt="St Louis"
-              loading="lazy"
-              sizes="(max-width: 1920px) 100vw, 1920px"
-            />
-          </a>
-          <div className="flex flex-col gap-4">
-            <h3 className="text-4xl font-bold text-primary">Specialty Roofs</h3>
+      <CustomContentCard
+        title="Specialty Roofs"
+        imgUrl="https://divinemetalandroofing.com/wp-content/uploads/2021/07/Slate-Roof.jpg"
+        footer={
+          <div className="flex flex-col gap-4 mt-8">
+            <h3 className="text-4xl font-bold text-primary">Synthetic</h3>
             <p>
-              High-end roofing adds a special touch to a residential building. At Divine Metal and Roofing, we take
-              pride in offering a range of specialty roofing materials. Choose the color, material, and style that suits
-              your practical and aesthetic needs.
+              Finding the ideal materials for your roof can be challenging. It takes consideration and planning to make
+              a home secure and comfortable. Choosing the suitable material is compulsory in building the perfect home.
             </p>
             <p>
-              We offer synthetic, shake, and slate products. Each is durable, long-lasting, and beautiful. Our
-              representatives help choose a color, material, and style and provide a free estimate.
+              Synthetic roofing replicates the look of popular materials but is made from a superior composite material
+              that is long-lasting. Benefits are
             </p>
+            <ul className="list-disc pl-8">
+              <li>Long-lasting</li>
+              <li>Simple installation</li>
+              <li>Eco-friendly</li>
+              <li>Fully customizable</li>
+            </ul>
           </div>
-        </div>
-        <div className="flex flex-col gap-4 mt-8">
-          <h3 className="text-4xl font-bold text-primary">Synthetic</h3>
-          <p>
-            Finding the ideal materials for your roof can be challenging. It takes consideration and planning to make a
-            home secure and comfortable. Choosing the suitable material is compulsory in building the perfect home.
-          </p>
-          <p>
-            Synthetic roofing replicates the look of popular materials but is made from a superior composite material
-            that is long-lasting. Benefits are
-          </p>
-          <ul className="list-disc pl-8">
-            <li>Long-lasting</li>
-            <li>Simple installation</li>
-            <li>Eco-friendly</li>
-            <li>Fully customizable</li>
-          </ul>
-        </div>
-      </section>
+        }
+      >
+        <p>
+          High-end roofing adds a special touch to a residential building. At Divine Metal and Roofing, we take pride in
+          offering a range of specialty roofing materials. Choose the color, material, and style that suits your
+          practical and aesthetic needs.
+        </p>
+        <p>
+          We offer synthetic, shake, and slate products. Each is durable, long-lasting, and beautiful. Our
+          representatives help choose a color, material, and style and provide a free estimate.
+        </p>
+      </CustomContentCard>
       <h3 className="text-4xl font-bold text-primary">Shake</h3>
       <p>
         Wood shakes are mainly made of western red cedar. They come in various grades and types. The wood shakes are

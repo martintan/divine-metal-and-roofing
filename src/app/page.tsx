@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { MenuItem } from "@/common";
 import Image from "next/image";
 
